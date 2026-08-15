@@ -4,8 +4,8 @@
 	"version": "1.0.0",
 	"minAppVersion": "0.14.0",
 	"description": "Display the real WeRead shelf, persist its cache, and sync notes only for books currently on the shelf.",
-	"author": "Local fork based on hankzhao",
+	"author": "memory0553",
 	"requestUrl": true,
-	"authorUrl": "https://zhaohongxuan.github.io",
+	"authorUrl": "https://github.com/memory0553",
 	"isDesktopOnly": false
 }

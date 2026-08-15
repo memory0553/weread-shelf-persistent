@@ -61,6 +61,19 @@
 
 当前仓库没有发布可直接下载的 Release，需要从源码构建。
 
+### 从安装包安装
+
+如果你拿到的是 `weread-shelf-persistent-1.0.0.zip`：
+
+1. 解压压缩包，得到 `weread-shelf-persistent` 文件夹。
+2. 将整个文件夹复制到 `<你的仓库>/.obsidian/plugins/`。
+3. 确认最终路径中存在
+   `.obsidian/plugins/weread-shelf-persistent/main.js`。
+4. 在 Obsidian 的“设置 → 第三方插件”中刷新并启用插件。
+5. 打开插件设置，配置微信读书 API Key。
+
+安装包使用者不需要安装 Node.js，也不需要执行构建命令。
+
 ### 1. 安装依赖并构建
 
 ```bash
@@ -138,6 +151,15 @@ dist/
 npm ci
 npm run build
 ```
+
+生成可分发安装包：
+
+```powershell
+npm run package:plugin
+```
+
+压缩包会生成到 `release/weread-shelf-persistent-<版本号>.zip`。该目录已被
+Git 忽略，安装包应通过 GitHub Release、网盘或其他文件传输方式单独分发。
 
 主要代码位置：
 
